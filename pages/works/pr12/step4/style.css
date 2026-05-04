@@ -1,0 +1,31 @@
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); /* По умолчанию — сетка из колонок */
+   gap: 15px; /* Отступы между фото */
+   padding: 15px;
+}
+
+.gallery img {
+   width: 100%;
+   height: auto; /* Сохраняем пропорции */
+   display: block;
+   border-radius: 8px;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .gallery{
+    grid-template-columns: repeat(3, 1fr)
+    }
+}
+@media (max-width: 992px) {
+    .gallery{
+    grid-template-columns: repeat(2, 1fr)
+    }
+}
+@media (max-width: 768px) {
+    .gallery{
+    grid-template-columns: repeat(1, 1fr)
+    }
+}
+

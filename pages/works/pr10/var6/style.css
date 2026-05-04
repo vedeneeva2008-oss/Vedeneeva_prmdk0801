@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+@font-face{
+    font-family: RobotoRegular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'TT Firs Neue', 'Arial', sans-serif;
+    background: #FCFCFC;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/image.png');
+    background-repeat: repeat;
+    background-size: auto;
+    opacity: 0.02;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 60px 20px 100px;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-title {
+    font-family: 'Forum';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 5%;
+    text-align: center;
+    background: radial-gradient(circle, #252525, #1a1a1a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto;
+}
+
+.star{
+    font-size: 25px;
+    color: rgba(107, 147, 231, 0.3);
+}
+
+.star1{
+    font-size: 32px;
+    color: rgba(107, 147, 231, 0.5);
+}
+
+.star2{
+    font-size: 35px;
+    color: #6B93E7;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.sort-label {
+    font-family: 'Berlingske Serif';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 45px;
+    background: radial-gradient(circle, #252525, #1a1a1a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    font-family: 'TT Firs Neue', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 3px;
+    border: 1px solid #ADADAD;
+    background: transparent;
+    color: #ADADAD;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.price-btn {
+    width: 120px;
+}
+
+.location-btn {
+    width: 246px;
+}
+
+.furniture-btn {
+    width: 236px;
+    border-color: #515151;
+    color: #fff;
+}
+
+.filter-btn.active {
+    background: radial-gradient(circle, #6F6F6F, #4E4E4E);
+    border-color: #6F6F6F;
+    color: #fff;
+}
+
+.cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.card {
+    width: 360px;
+    background: radial-gradient(circle, #FFFFFF, #FFFFFF);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-image {
+    width: 360px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+    width: 310px;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.card-title {
+    font-family: 'TT Firs Neue', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6F6F6F;
+    margin-bottom: 15px;
+}
+
+.card-details {
+    font-family: 'TT Firs Neue', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.card-details2{
+    color: #4E4E4E; 
+}
+
+.card-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+}
+
+.price-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.price-label {
+    font-family: 'TT Firs Neue', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    color: #6F6F6F;
+}
+
+.price-value {
+    font-family: 'Forum', cursive;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    text-transform: uppercase;
+    background: radial-gradient(circle, #6F6F6F, #4E4E4E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card-btn {
+    width: 100%;
+    padding: 22px 0;
+    border: none;
+    border-radius: 5px;
+    font-family: 'TT Firs Neue', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gray-btn {
+    background: linear-gradient(135deg, #F0F0F0, #EEEEEE);
+    color: #2f2f2f;
+}
+
+.yellow-btn {
+    background: linear-gradient(135deg, #F2E0A9, #E8CD80);
+    color: #5a4a20;
+}
+
+.show-more-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.show-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    padding: 10px 25px;
+    border: none;
+}
+
+.btn-text {
+    font-family: 'TT Firs Neue';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #4E4E4E;
+}
+
+.btn-icon {
+    position: absolute;
+    height: 20px;
+    left: 53.7%;
+    right: 45.25%;
+    top: 1155px;
+    background: radial-gradient(46.43% 72.12% at 44.24% 46.07%, #6F6F6F 0%, #4E4E4E 100%)
+}
