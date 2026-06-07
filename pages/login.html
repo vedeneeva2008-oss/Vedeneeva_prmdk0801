@@ -1,39 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Веденеева П.И.: всё, и ничего</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация | Веденеева П.И.</title>
     <link href="../styles/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <h2>Вернуться:</h2>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-icon">❤︎</span>
+                    <h1>Веденеева П.И.</h1>
+                    <span class="logo-icon">❤︎</span>
+                </div>
+                <p class="tagline">всё, и ничего</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
                 <li><a href="../index.html">Главная</a></li>
                 <li><a href="news.html">Новости</a></li>
                 <li><a href="personal.html">Обо мне</a></li>
                 <li><a href="work.html">Мои работы</a></li>
+                <li><a href="login.html">Авторизация</a></li>
                 <li><a href="register.html">Регистрация</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <main>
-        <section>
-            <form>
-                <fieldset style="background-color: rgb(255, 204, 187); padding: 10px; width: 40%; display: block; margin-left: auto;margin-right: auto;">
-                    <legend>Авторизация</legend>
-                    <p>логин:   <input name="login" type="text" size="50" style="float: right;"></p>
-                    <p>пароль:   <input name="password" type="password" size="50" style="float: right;"></p>
-                    <button style="display: block; margin-left: auto;margin-right: auto;" type="submit">Вход</button>
-                </fieldset>
-            </form>
+        <section class="login-section">
+                <div class="login-card">
+                    <h2>Авторизация</h2>
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label for="login">Логин</label>
+                            <input type="text" id="login" name="login" placeholder="Введите логин" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль</label>
+                            <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Войти</button>
+                    </form>
+                    <div class="login-footer">
+                        <a href="register.html">Нет аккаунта? Зарегистрироваться</a>
+                    </div>
+                </div>
         </section>
     </main>
 
-    <footer>
-        @ Веденеева П.И. | Права защищены
+    <footer class="main-footer">
+        <div class="container">
+            <p>© Веденеева П.И. | Все права защищены</p>
+        </div>
     </footer>
+
 </body>
 </html>

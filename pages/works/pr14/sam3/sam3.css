@@ -1,0 +1,38 @@
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 500px;
+    top: 0;
+    background: red;
+  }
+}
+
+.stage {
+  background: #eaeaed;
+  border-radius: 6px;
+  height: 150px;
+  position: relative;
+  min-width: 538px;
+}
+
+.stage:hover .sq {
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+}
+
+.sq {
+  background: #8ec1f0;
+  border: 2px solid black;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+figure {
+  margin: 0;
+}

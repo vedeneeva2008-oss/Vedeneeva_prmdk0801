@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, svg, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a2e;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+h3 {
+    margin: 15px 0 10px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    z-index: 100;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #c31432;
+}
+
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #333;
+    }
+}
+
+nav a:hover {
+    color: #c31432;
+}
+
+.btn-small {
+    background: #c31432;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 30px;
+}
+
+section {
+    padding: 70px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.gray-bg {
+    background: #faf9fc;
+}
+
+.btn {
+    display: inline-block;
+    background: #c31432;
+    color: white;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.glav {
+    background-image: url('img/img11.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.glav-grid {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 15px 0;
+    }
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+}
+
+.dates {
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 24px;
+    padding: 25px 20px;
+    width: 260px;
+    text-align: center;
+    transition: 0.2s;
+    p {
+        color: #555;
+        font-size: 0.9rem;
+    }
+    
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.step {
+    background: white;
+    border-radius: 24px;
+    padding: 25px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    border-left: 4px solid #c31432;
+}
+
+.num {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #c31432;
+}
+
+.form-box {
+    max-width: 650px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 40px;
+    padding: 40px;
+    text-align: center;
+    h2 {
+        margin-bottom: 10px;
+    }
+} 
+
+input, select {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+label input {
+    width: auto;
+    margin: 0;
+}
+
+.img {
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img.small {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.img.tiny {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.img.partner {
+    padding: 15px 25px;
+    max-width: 120px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+footer {
+    background: #0f0f1a;
+    color: #aaa;
+    text-align: center;
+    padding: 40px 0;
+}
+
+@media (max-width: 900px) {
+    .glav-grid h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .glav-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+    .step {
+        width: 100%;
+        max-width: 320px;
+    }
+    .form-box {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 45px 0;
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+}

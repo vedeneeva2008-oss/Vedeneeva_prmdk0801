@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Веденеева П.И.: всё, и ничего</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веденеева П.И. | Портфолио</title>
     <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Персональный сайт Веденеевой П.И.</h1>
-        <nav>
-            <ul>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-icon">❤︎</span>
+                    <h1>Веденеева П.И.</h1>
+                    <span class="logo-icon">❤︎</span>
+                </div>
+                <p class="tagline">всё, и ничего</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="pages/news.html">Новости</a></li>
                 <li><a href="pages/personal.html">Обо мне</a></li>
@@ -17,32 +30,48 @@
                 <li><a href="pages/login.html">Авторизация</a></li>
                 <li><a href="pages/register.html">Регистрация</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <main>
-        <section class="cl">
-            <article class="cl8">
-                <h3>Программирование на С#</h3>
-                <img src="img/icon1.png" alt="лого С#" width="130">
-                <p>Базовые знания ООП, работа с WP-forms</p>
-            </article>
-            <article class="cl8">
-                <h3>Дизайн в Corel Draw(и не только в Corel Draw)</h3>
-                <img src="img/icon2.png" alt="лого Corel Draw" width="130">
-                <p>Разработка дизайнов мерча</p>
-            </article>
-            <article class="cl8">
-                <h3>Мемы с котами</h3>
-                <img src="img/cat3.png" alt="мем с котом" width="225">
-                <p>Профессиональное умение находить мемы с котами</p>
-            </article>
+        <section class="welcome-section">
+            <div class="container">
+                <div class="welcome-content">
+                    <h2>Привет, это моё портфолио</h2>
+                    <p>Здесь собраны мои проекты, навыки и творческие эксперименты.<br> Добро пожаловать в мир моего творческого беспорядка.</p>
+                </div>
+            </div>
         </section>
-        </div>
+
+        <section class="skills-section">
+            <div class="container">
+                <h2>Мои навыки и умения</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="img/icon1.png" alt="C#" class="skill-icon">
+                        <h3>Программирование на C#</h3>
+                        <p>Базовые знания ООП, работа с Visual Studio</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="img/icon2.png" alt="Corel Draw" class="skill-icon">
+                        <h3>Дизайн в Corel Draw<br>(и не только)</h3>
+                        <p>Разработка дизайнов мерча</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="img/catt.png" alt="мемы с котами" class="skill-icon wide">
+                        <h3>Мемы с котами</h3>
+                        <p>Профессиональное умение находить мемы с котами</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        @ Веденеева П.И. | Права защищены
+    <footer class="main-footer">
+        <div class="container">
+            <p>© Веденеева П.И. | Все права защищены</p>
+        </div>
     </footer>
+
 </body>
 </html>
